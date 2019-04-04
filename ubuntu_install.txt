@@ -14,3 +14,15 @@ search icx.intel.com
 nameserver 10.248.2.5
 nameserver 10.239.27.36
 nameserver 172.17.6.9
+
+pip install --proxy=http://proxy-prc.intel.com:911 simpy
+export http_proxy=http://proxy-prc.intel.com:911
+git config --global http.proxy http://proxy-prc.intel.com:911
+
+npm config set proxy=http://proxy-prc.intel.com:911
+
+sudo -E add-apt-repository -y ppa:ethereum/ethereum
+
+http://www.cnblogs.com/lishanlei/p/9090404.html
+
+http://www.it-jason.com/archives/570
