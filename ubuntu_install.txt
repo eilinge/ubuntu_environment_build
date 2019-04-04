@@ -1,0 +1,16 @@
+sudo touch /etc/apt/apt.conf
+sudo chmod a+wx /etc/apt/apt.conf
+sudo vi /etc/apt/apt.conf
+
+Acquire::http::proxy "http://proxy-prc.intel.com:911"; 
+Acquire::ftp::proxy "ftp://proxy-prc.intel.com:911"; 
+Acquire::https::proxy "https://proxy-prc.intel.com:911"; 
+
+sudo apt install openssh-server
+
+sudo chmod a+wx /etc/resolv.conf
+
+search icx.intel.com
+nameserver 10.248.2.5
+nameserver 10.239.27.36
+nameserver 172.17.6.9
